@@ -18,7 +18,7 @@
         <nav>
             <ul>
                 <li class="nav-item"><a href="#design-section">Design Principles</a></li>
-                <li class="nav-item"><a href="#color-section"></a>Color</li>
+                <li class="nav-item"><a href="#color-section">Color</a></li>
                 <li class="nav-item"><a href="#typography-section">Typography</a></li>
                 <li class="nav-item"><a href="#images-section">Images</a></li>
                 <li class="nav-item"><a href="#layout-section">Layout and Spacing</a></li>
@@ -27,20 +27,165 @@
     </header>
 
     <main>
+        <!-- Hero section -->
+        <section id="hero">
+            <div id="hero-content">
+                <h1>Crafting Beautiful Web UI</h1>
+                <p>Your go-to resource for tips on improving your user interfaces and experience</p>
+            </div>
+        </section>
+
         <!-- Design Principles section -->
-        <section id="design-section"></section>
+        <section id="design-section" class="section-block">
+            <h2 class="section-heading">Design Principles</h2>
+            <p>Knowing the fundamentals of effective Web UI design</p>
+            <div class="content">
+                <div class="design-principle">
+                    <img src="" alt="">
+                    <div class="principle-text">
+                        <h3>Simplicity</h3>
+                        <p>
+                            Simplicity is a fundamental principle in web UI design that 
+                            emphasizes clarity and straightforwardness. Here's more
+                            about why it is important:
+                        </p>
+                        <ul>
+                            <li>
+                                <p>
+                                    <span><strong>Mobile-friendly: </strong></span>
+                                    Simple designs often translate
+                                    well to mobile devices, ensuring a consistent 
+                                    experience across different screen sizes.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <span><strong>Reduces cognitive overload: </strong></span>
+                                    A simple design reduces cognitive load on users. 
+                                    They don't have to work hard to figure out how to 
+                                    navigate or complete tasks on your website. 
+                                    This leads to a more enjoyable and efficient user experience.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="design-principle">
+                    <img src="" alt="">
+                    <div class="principle-text">
+                        <h3>Consistency</h3>
+                        <p>
+                            Consistency in web UI design refers to maintaining uniformity 
+                            in design elements and interactions throughout a website. 
+                            Here's why it matters:
+                        </p>
+                        <ul>
+                            <li>
+                                <p>
+                                    <span><strong>Predictability: </strong></span>
+                                    Consistency helps users predict how different parts of 
+                                    your website will behave. When elements look and function similarly, 
+                                    users feel more in control of their experience.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <span><strong>Branding: </strong></span>
+                                    Consistency in branding elements such as logos, colors, and typography 
+                                    reinforces your brand identity and creates a memorable user experience.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="design-principle">
+                    <img src="" alt="">
+                    <div class="principle-text">
+                        <h3>Accessibility</h3>
+                        <p>
+                            Accessibility is the practice of designing web interfaces to be usable by people
+                            of all abilities, including those with disabilities. Ensuring accessibility is 
+                            not only ethical but also legally required in many cases. Here's why it's vital:
+                        </p>
+                        <ul>
+                            <li>
+                                <p>
+                                    <span><strong>Inclusivity and Compliance: </strong></span> 
+                                    Making your website accessible means welcoming a wider audience, 
+                                    including people with disabilities such as visual, auditory, motor, 
+                                    or cognitive impairments.
+                                    Many countries have laws and regulations 
+                                    (e.g., WCAG guidelines in the US) that require websites to be accessible. 
+                                    Non-compliance can lead to legal issues.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <span><strong>Improved User Experience: </strong></span>
+                                    Accessibility improvements often benefit all users. 
+                                    For example, captions on videos can be helpful for people in noisy environments or those with muted devices.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Color section -->
-        <section id="color-section"></section>
+        <section id="color-section" class="section-block">
+            <h2 class="section-heading">Color</h2>
+            <p>Understanding Color and Constrast</p>
+            <div class="section-content">
+                <div>
+                    <p>
+                        Color is a vital element in web design that can evoke emotions, 
+                        communicate messages, and enhance user experience.
+                    </p>
+                    <p>
+                        Color is a powerful tool for establishing hierarchy within a user interface. 
+                        By using color strategically, you can guide users' attention to important elements, 
+                        such as primary buttons, headings, or calls to action. 
+                        Typically, brighter and more saturated colors draw the eye, so you can reserve them 
+                        for critical elements, while muted colors can be used for less important content.
+                    </p>
+                </div>
+                <div id="color-contrast">
+                    <!-- THese must show good and bad color contrast -->
+                    <div id="good-contrast">
+                        <span>Text 1</span>
+                    </div>
+                    <div id="bad-contrast">
+                        <span>Text 2</span>
+                    </div>
+                </div>
+                <div>
+                    <h4>Generate a Color palette</h4>
+                    <p>
+                        Click the button below to generate a color palette
+                    </p>
+                    <div id="color-palette">
+                        <!-- The generated color palette will be here -->
+                    </div>
+                    <button id="generate-palette">Generate</button>
+                </div>
+            </div>
+        </section>
 
         <!-- Typography section -->
-        <section id="typography-section"></section>
+        <section id="typography-section" class="section-block">
+            <h2 class="section-heading">Typography</h2>
+        </section>
 
         <!-- Images section -->
-        <section id="images-section"></section>
+        <section id="images-section" class="section-block">
+            <h2 class="section-heading">Images</h2>
+        </section>
 
         <!-- Layout and Spacing section -->
-        <section id="layout-section"></section>
+        <section id="layout-section" class="section-block">
+            <h2 class="section-heading">Layout and Spacing</h2>
+        </section>
     </main>
 
     <footer></footer>
