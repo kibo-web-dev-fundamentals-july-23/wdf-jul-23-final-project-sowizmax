@@ -24,6 +24,11 @@ body {
     background: var(--white);
 }
 
+/* No list-style for ol and ul elements */
+ol, ul {
+    list-style: none;
+}
+
 /* For responsive images - however, define width and height on img tag*/
 img {
     max-width: 100%;
