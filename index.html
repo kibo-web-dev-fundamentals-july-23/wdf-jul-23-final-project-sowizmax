@@ -12,16 +12,16 @@
 </head>
 <body>
     <header>
-        <div>
+        <div class="logo">
             <a href="/">Shepherds</a>
         </div>
-        <nav>
-            <ul>
+        <nav id="header-nav" class="nav">
+            <ul class="nav-list">
                 <li class="nav-item"><a href="#design-section">Design Principles</a></li>
                 <li class="nav-item"><a href="#color-section">Color</a></li>
                 <li class="nav-item"><a href="#typography-section">Typography</a></li>
-                <li class="nav-item"><a href="#images-section">Images</a></li>
                 <li class="nav-item"><a href="#layout-section">Layout and Spacing</a></li>
+                <li class="nav-item"><a href="#team-section">Our Team</a></li>
             </ul>
         </nav>
     </header>
@@ -175,20 +175,278 @@
         <!-- Typography section -->
         <section id="typography-section" class="section-block">
             <h2 class="section-heading">Typography</h2>
-        </section>
-
-        <!-- Images section -->
-        <section id="images-section" class="section-block">
-            <h2 class="section-heading">Images</h2>
+            <p>Exploring Fonts, Sizes, Weights, and Style</p>
+            <div class="section-content">
+                <p>
+                    Typography is a critical element of web design, encompassing the selection, arrangement, 
+                    and presentation of typefaces (fonts) to enhance readability, convey information, and 
+                    contribute to the overall aesthetics of a website.
+                </p>
+                <p>
+                    Effective typography enhances the overall user experience and contributes to the visual 
+                    identity of your website. It's a powerful tool for communicating your content, brand, and 
+                    message to your audience. When implemented thoughtfully, typography can engage users, 
+                    improve comprehension, and leave a lasting impression.
+                    Here are key aspects to consider when working with typography in web design:
+                </p>
+                <ul>
+                    <li>
+                        <h4>Font Selection</h4>
+                        <p>
+                            The choice of fonts sets the tone and personality of your website. 
+                            Consider the following when selecting fonts:
+                        </p>
+                        <ul>
+                            <li>
+                                <p>
+                                    <span><strong>Serif vs. Sans-serif - </strong></span>
+                                    Serif fonts (e.g., Times New Roman) 
+                                    convey a traditional and formal feel, while sans-serif fonts 
+                                    (e.g., Arial) are clean and modern. Choose based on your website's 
+                                    purpose and style.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <span><strong>Web Safe Fonts - </strong></span> 
+                                    Use web-safe fonts to ensure consistency across
+                                    different devices and browsers. Popular web-safe fonts include Arial, 
+                                    Helvetica, Georgia, and Times New Roman.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <span><strong>Google Fonts - </strong></span> 
+                                    Google Fonts offers a vast library of free, 
+                                    web-friendly fonts that you can easily integrate into 
+                                    your website for unique typography.
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Hierarchy</h4>
+                        <p>
+                            Establish a visual hierarchy through typography to guide users' 
+                            attention and emphasize essential content. Key aspects of hierarchy include:
+                        </p>
+                        <ul>
+                            <li>
+                                <p>
+                                    <span><strong>Heading levels - </strong></span>
+                                    Use different font sizes and weights for headings (h1 to h6) to indicate their importance.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <span><strong>Font weight - </strong></span>
+                                    Bold or heavier fonts can be used for titles and important elements, 
+                                    while lighter weights are suitable for body text.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <span><strong>Color - </strong></span>
+                                    Consider using color variations (e.g., darker text) for emphasis, 
+                                    but ensure adequate contrast for readability.
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Whitespacing and Linespacing</h4>
+                        <p>
+                            Adequate spacing between lines (leading) and paragraphs (margin and padding) 
+                            enhances readability. Too little spacing can make text appear cluttered, 
+                            while too much spacing can disrupt flow.
+                            Adjust line height (line spacing) to ensure that text doesn't feel cramped or too spread out.
+                        </p>
+                    </li>
+                </ul>
+                <!-- Typography playground -->
+                <div id="typography-playground">
+                    <h3>Typography Playground</h3>
+                    <div class="text-input">
+                        <label for="live-text-input">Live Text Input</label>
+                        <input type="text" id="live-text-input" placeholder="Type here">
+                        <div id="live-text-output">Your text will appear here.</div>
+                    </div>
+                    <div id="typography-controls">
+                        <div class="slider">
+                            <label for="font-size-slider">Font Size</label>
+                            <input type="range" id="font-size-slider" min="10" max="36" step="1" value="16">
+                            <span id="font-size-value">16</span> px
+                        </div>
+                        <div class="slider">
+                            <label for="font-weight-slider">Font Weight</label>
+                            <input type="range" id="font-weight-slider" min="100" max="900" step="100" value="400">
+                            <span id="font-weight-value">400</span>
+                        </div>
+                        <div class="slider">
+                            <label for="font-style-slider">Font Style</label>
+                            <select id="font-style-select">
+                              <option value="normal">Normal</option>
+                              <option value="italic">Italic</option>
+                            </select>
+                        </div>
+                        <div class="font-family-dropdown">
+                            <label for="font-family-select">Font Family</label>
+                            <select id="font-family-select">
+                              <option value="Arial, sans-serif">Arial</option>
+                              <option value="Helvetica, sans-serif">Helvetica</option>
+                              <option value="Georgia, serif">Georgia</option>
+                              <option value="Times New Roman, serif">Times New Roman</option>
+                              <option value="Courier New, monospace">Courier New</option>
+                              <option value="Verdana, sans-serif">Verdana</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Layout and Spacing section -->
         <section id="layout-section" class="section-block">
             <h2 class="section-heading">Layout and Spacing</h2>
+            <p>Building Responsive and Consistent UIs</p>
+            <div class="section-content">
+                <p>
+                    Layout and spacing are fundamental aspects of web design that greatly 
+                    influence the user experience and the overall aesthetics of a website. 
+                    Here's a comprehensive look at these two critical elements:
+                </p>
+                <div id="layout">
+                    <h3>Layout</h3>
+                    <div class="layout-spacing-content">
+                        <ol>
+                            <li>
+                                <h4>Layout System</h4>
+                                <p>
+                                    Grid-based layouts provide structure and consistency to a website's design. 
+                                    Using a grid system helps align elements and create a balanced visual hierarchy.
+                                    Popular grid systems include the 12-column grid and the Bootstrap grid system.
+                                    There is also the Flexbox system that helps group items in a flexbox container.
+                                </p>
+                                <div class="layout-images">
+                                    <div>
+                                        <img src="" alt="Grid system">
+                                    </div>
+                                    <div>
+                                        <img src="" alt="Flexbox system">
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Responsive Design</h4>
+                                <p>
+                                    In the era of various devices and screen sizes, responsive design is essential. 
+                                    Ensure your layout adjusts seamlessly to different screen resolutions and orientations.
+                                    Use media queries in CSS to define specific styles for various screen sizes.
+                                </p>
+                            </li>
+                            <li>
+                                <h4>Whitespace - Negative Space</h4>
+                                <p>
+                                    Whitespace is the empty space between and around elements in a layout. 
+                                    It's essential for readability and visual clarity.
+                                    Proper use of whitespace can highlight important content and prevent overcrowding.
+                                </p>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div id="spacing">
+                    <h3>Spacing</h3>
+                    <div class="layout-spacing-content">
+                        <ol>
+                            <li>
+                                <h4>Margin and Padding</h4>
+                                <p>
+                                    Margin is the space outside an element, while padding is the space inside an element's 
+                                    boundary. Properly defined margins and padding improve visual separation and readability.
+                                    Be consistent with margin and padding values across elements for a polished appearance.
+                                </p>
+                            </li>
+                            <li>
+                                <h4>Line Spacing - Leading</h4>
+                                <p>
+                                    Adequate line spacing (leading) between lines of text enhances readability. 
+                                    Ensure that text is not too tightly packed or too spaced out.
+                                    Adjust line height (line spacing) in CSS to maintain an optimal reading experience.
+                                </p>
+                            </li>
+                            <li>
+                                <h4>Proximity Grouping</h4>
+                                <p>
+                                    Elements that are related should be grouped together with minimal space between them. 
+                                    This helps users understand the relationships between different elements.
+                                    Use appropriate spacing to distinguish between different groups of content.
+                                </p>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our team section -->
+        <section id="team-section" class="section-block">
+            <h2 class="section-heading">Our Team</h2>
+            <p>Passionate and Talented Individuals</p>
+            <div class="section-content">
+                <div class="team-member">
+                    <img src="" alt="Team Member 1">
+                    <h3 class="team-member-name">Solomon Alan-Dei</h3>
+                    <p class="about-member">Founder & CEO</p>
+                </div>
+                <div class="team-member">
+                    <img src="" alt="Team Member 1">
+                    <h3 class="team-member-name">Maxwell</h3>
+                    <p class="about-member">Founder & CEO</p>
+                </div>
+                <div class="team-member">
+                    <img src="" alt="Team Member 1">
+                    <h3 class="team-member-name">Wisdom</h3>
+                    <p class="about-member">Founder & CEO</p>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer></footer>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="logo">
+                <a href="/">Shepherds</a>
+            </div>
+            <div class="contact-info">
+              <h3>Contact Us</h3>
+              <p><strong>Phone:</strong> +233 556190190 / +233 574100100</p>
+              <p><strong>Address:</strong> 876 Cantonments Streets, Accra - Ghana.</p>
+              <!-- Google Maps Embed -->
+              <div class="google-maps">
+                <!-- Replace the following iframe with your actual Google Maps embed code -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d99295.52493081245!2d-0.22703036734390747!3d5.599128889743472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdb9bfb6b887a931%3A0xfec90f76c6d7530!2sAccra%2C%20Ghana!5e0!3m2!1sen!2sus!4v1568837395055!5m2!1sen!2sus" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+              </div>
+            </div>
+      
+            <div class="footer-nav">
+              <h3>Quick Links</h3>
+              <nav id="footer-nav" class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#design-section">Design Principles</a></li>
+                    <li class="nav-item"><a href="#color-section">Color</a></li>
+                    <li class="nav-item"><a href="#typography-section">Typography</a></li>
+                    <li class="nav-item"><a href="#layout-section">Layout and Spacing</a></li>
+                    <li class="nav-item"><a href="#team-section">Our Team</a></li>
+                </ul>
+              </nav>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2023 Sowizmax. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script src="script,js"></script>
 </body>
