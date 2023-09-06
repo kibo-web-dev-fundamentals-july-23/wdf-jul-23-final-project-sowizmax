@@ -1,11 +1,130 @@
 /* Mobile styles (below 768px) */
 
+/* Style Body */
+body {
+    width: 100%;
+    background: var(--white);
+}
+
+/* Helper Style Classes */
+.block {
+    width: 100%;
+}
+
+section.text-block {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section.block {
+    margin-bottom: 2rem;
+}
+
+section .section-heading {
+    margin-bottom: 1rem;
+}
+
+section .section-subheading {
+    margin-bottom: 1.5rem;
+}
+
+/* Style the header and header navigation */
+.header {
+    height: 50px;
+}
+
+.logo a {
+    text-transform: uppercase;
+}
+
+/* Footer Style */
+.footer {
+    background-color: var(--pink);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.copyright {
+    text-align: center;
+}
+
+/* Style the hero section */
+#hero {
+    background: linear-gradient(-45deg, var(--gradient-purple), var(--gradient-pink)), url("./images/background.jpg") center center / cover no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
   
   /* Tablet styles (768px to 991px) */
-  @media (min-width: 768px) and (max-width: 991px) {
-  }
+@media (min-width: 768px) and (max-width: 991px) {
+}
   
   /* Desktop styles (992px and above) */
-  @media (min-width: 992px) {
-  }
+@media (min-width: 992px) {
+}
   
+/* For both tablets and desktop screens */
+@media (min-width: 768px) {
+    /* Header Styles */
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+    .nav-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-list .nav-item {
+        display: block;
+    }
+    .nav-list .nav-item:not(:last-child) {
+        margin-right: 1rem;
+    }
+
+    /* Hero section styles */
+    #hero {
+        height: 70vh;
+    }
+
+    /* Content Styles - Helpers */
+    section.block {
+        margin-bottom: 4rem;
+    }
+
+    section .section-heading {
+        margin-bottom: 1.5rem;
+    }
+    
+    section .section-subheading {
+        margin-bottom: 2rem;
+    }
+
+    /* Footer Styles */
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-content .contact-info {
+        flex-grow: 2;
+    }
+
+    .footer-nav .nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    
+    
+}
