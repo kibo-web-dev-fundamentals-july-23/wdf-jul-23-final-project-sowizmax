@@ -29,6 +29,11 @@ ol, ul {
     list-style: none;
 }
 
+/* Links should not have text-decoration */
+a {
+    text-decoration: none;
+}
+
 /* For responsive images - however, define width and height on img tag*/
 img {
     max-width: 100%;
