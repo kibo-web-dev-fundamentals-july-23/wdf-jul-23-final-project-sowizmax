@@ -1,0 +1,11 @@
+/* Mobile styles (below 768px) */
+
+  
+  /* Tablet styles (768px to 991px) */
+  @media (min-width: 768px) and (max-width: 991px) {
+  }
+  
+  /* Desktop styles (992px and above) */
+  @media (min-width: 992px) {
+  }
+  
