@@ -33,15 +33,22 @@ section .section-subheading {
 /* Style the header and header navigation */
 .header {
     height: 50px;
+    background-color: #F5F5F5;
+    position: fixed;
 }
 
 .logo a {
+    font-family: "Poppins", sans-serif;
     text-transform: uppercase;
+    font-weight: 800;
 }
+
+
 
 /* Footer Style */
 .footer {
-    background-color: var(--pink);
+    background-color: var(--deep-blue);
+    color: var(--pink);
 }
 
 .footer-content {
@@ -50,18 +57,28 @@ section .section-subheading {
 }
 
 .footer-content .google-maps {
-    width: 100%;
+    flex-grow: 2;
+}
+
+.company-info .logo a {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.contact-info address {
+    font-style: normal;
+    color: var(--white);
 }
 
 
 .copyright {
     text-align: center;
-    margin-bottom: 2rem;
 }
 
 /* Style the hero section */
 #hero {
-    background: linear-gradient(-45deg, var(--gradient-purple), var(--gradient-pink)), url("./images/background.jpg") center center / cover no-repeat;
+    background: linear-gradient(-45deg, var(--gradient-purple), var(--gradient-pink)), url("./images/design-bg.jpg") center center / cover no-repeat;
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -127,6 +144,12 @@ section .section-subheading {
     }
     .nav-list .nav-item {
         display: block;
+        color: var(--gradient-purple);
+        font-weight: 600;
+    }
+
+    .header .nav-item a:hover {
+        text-decoration: underline;
     }
     .nav-list .nav-item:not(:last-child) {
         margin-right: 1rem;
@@ -179,17 +202,37 @@ section .section-subheading {
         margin-top: 2rem;
     }
 
+    #typography-playground {
+        margin-top: 2rem;
+    }
+
     /* Layout Section Style */
     .layout-images {
         display: flex;
         justify-content: space-between;
         text-align: center;
         font-style: italic;
+        margin-top: 1rem;
+    }
+
+    #layout-section #layout,
+    #layout-section #spacing {
+        margin-top: 2rem;
+    }
+
+    .layout-spacing-content li {
+        margin-top: 1rem;
     }
 
     /* Content Styles - Helpers */
     section.block {
         margin-bottom: 4rem;
+    }
+
+    .principle-text h4,
+    .section-content li h4,
+    .section-content li h5 {
+        margin-bottom: 0.5rem;
     }
     
     section.text-block {
@@ -211,9 +254,6 @@ section .section-subheading {
     }
 
     /* Footer Styles */
-    .footer {
-        height: 500px;
-    }
     .footer-content {
         width: 90%;
         margin-left: auto;
@@ -223,9 +263,46 @@ section .section-subheading {
         justify-content: space-between;
     }
 
+    .company-info .logo {
+        margin-bottom: 2rem;
+        font-size: 2rem;
+    }
+
+    .company-info,
+    .google-maps,
+    .footer-nav {
+        flex-basis: auto;
+        padding: 1rem;
+    }
+
+    .contact-info h3,
+    .footer-nav h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-decoration: wavy;
+        margin-bottom: 0.5rem;
+    }
+
+    .contact-info p {
+        padding: 0.125rem 0;
+    }
+
     .footer-nav .nav-list {
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .footer-nav .nav-item {
+        padding: 0.125rem 0;
+    }
+
+    .footer-nav .nav-item a {
+        color: var(--white);
+    }
+
+    .footer-nav .nav-item a:hover {
+        color: var(--pink);
+        text-decoration: underline;
     }
 
     .footer-content .google-maps iframe{
