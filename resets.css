@@ -39,6 +39,7 @@ ol, ul {
 /* Links should not have text-decoration */
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 /* For responsive images - however, define width and height on img tag*/
