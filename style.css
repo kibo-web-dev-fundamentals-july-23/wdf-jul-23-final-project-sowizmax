@@ -298,6 +298,7 @@ section .section-subheading {
 
     .footer-nav .nav-item a {
         color: var(--white);
+        font-weight: 500;
     }
 
     .footer-nav .nav-item a:hover {
