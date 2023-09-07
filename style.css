@@ -33,6 +33,8 @@ section .section-subheading {
 /* Style the header and header navigation */
 .header {
     height: 50px;
+    background-color: #F5F5F5;
+    position: fixed;
 }
 
 .logo a {
@@ -61,7 +63,7 @@ section .section-subheading {
 
 /* Style the hero section */
 #hero {
-    background: linear-gradient(-45deg, var(--gradient-purple), var(--gradient-pink)), url("./images/background.jpg") center center / cover no-repeat;
+    background: linear-gradient(-45deg, var(--gradient-purple), var(--gradient-pink)), url("./images/design-bg.jpg") center center / cover no-repeat;
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -179,17 +181,37 @@ section .section-subheading {
         margin-top: 2rem;
     }
 
+    #typography-playground {
+        margin-top: 2rem;
+    }
+
     /* Layout Section Style */
     .layout-images {
         display: flex;
         justify-content: space-between;
         text-align: center;
         font-style: italic;
+        margin-top: 1rem;
+    }
+
+    #layout-section #layout,
+    #layout-section #spacing {
+        margin-top: 2rem;
+    }
+
+    .layout-spacing-content li {
+        margin-top: 1rem;
     }
 
     /* Content Styles - Helpers */
     section.block {
         margin-bottom: 4rem;
+    }
+
+    .principle-text h4,
+    .section-content li h4,
+    .section-content li h5 {
+        margin-bottom: 0.5rem;
     }
     
     section.text-block {
