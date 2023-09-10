@@ -30,7 +30,7 @@
     margin-right: 1rem;
 }
 
-#ham-icon,
+.ham-icon-wrapper,
 .closebtn {
     display: none;
 }

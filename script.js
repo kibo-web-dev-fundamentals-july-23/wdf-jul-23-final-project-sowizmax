@@ -179,3 +179,23 @@ function updateFontFamily() {
   const selectedFontFamily = fontFamilySelect.value;
   liveTextOutput.style.fontFamily = selectedFontFamily;
 }
+
+// Open when someone clicks on the span element
+function openNav() {
+  document.getElementById("menu").style.width = "100%";
+  document.getElementById("header-nav").style.display = "block";
+  
+}
+
+// Close when someone clicks on the "x" symbol inside the overlay
+function closeNav() {
+  document.getElementById("header-nav").style.display = "none";
+  document.getElementById("menu").style.width = "0%";
+}
+
+//  Close when you click on a  header nav-item
+const navItems = document.getElementsByClassName("hn");
+let navItemsArray = Array.from(navItems);
+navItemsArray.forEach((navItem) => {
+  navItem.addEventListener('click', closeNav);
+})
