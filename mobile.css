@@ -162,6 +162,12 @@ section .section-subheading {
   margin-top: 1.5rem;
 }
 
+/* Layout section style */
+#layout-section #layout,
+#layout-section #spacing {
+    margin-top: 1.5rem;
+}
+
 /* Team Section Style */
 #team-section .section-content {
   display: flex;
