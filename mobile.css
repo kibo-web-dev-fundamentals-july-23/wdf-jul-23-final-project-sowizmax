@@ -176,11 +176,14 @@ section .section-subheading {
 .footer-content {
   display: flex;
   flex-direction: column;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .footer-content .google-maps {
   flex-grow: 2;
   margin-top: 1.5rem;
+  width: 100%;
 }
 
 .company-info .logo a {
