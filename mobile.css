@@ -54,36 +54,6 @@ section .section-subheading {
   display: none;
 }
 
-/* Footer Style */
-.footer {
-  background-color: var(--deep-blue);
-  color: var(--pink);
-}
-
-.footer-content {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer-content .google-maps {
-  flex-grow: 2;
-}
-
-.company-info .logo a {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  color: var(--white);
-}
-
-.contact-info address {
-  font-style: normal;
-  color: var(--white);
-}
-
-.copyright {
-  text-align: center;
-}
-
 /* Style the hero section */
 #hero {
   padding-left: 1rem;
@@ -195,4 +165,47 @@ section .section-subheading {
 .about-member {
   text-align: center;
   margin-top: 0.2rem;
+}
+
+/* Footer Style */
+.footer {
+  background-color: var(--deep-blue);
+  color: var(--pink);
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-content .google-maps {
+  flex-grow: 2;
+  margin-top: 1.5rem;
+}
+
+.company-info .logo a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.company-info {
+  margin-top: 1rem;
+}
+
+.company-info .contact-info {
+  margin-top: 1.2rem;
+}
+
+.footer-nav {
+  margin-top: 1.5rem;
+}
+
+.contact-info address {
+  font-style: normal;
+  color: var(--white);
+}
+
+.copyright {
+  text-align: center;
 }
