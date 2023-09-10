@@ -30,6 +30,11 @@
     margin-right: 1rem;
 }
 
+#ham-icon,
+.closebtn {
+    display: none;
+}
+
 /* Hero section styles */
 #hero {
     padding-left: 0;
