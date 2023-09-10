@@ -89,6 +89,15 @@
     margin-top: 2rem;
 }
 
+#live-text-output {
+    margin-top: 2rem;
+}
+
+.typography-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
 /* Layout Section Style */
 .layout-images {
     display: flex;
