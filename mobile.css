@@ -15,6 +15,7 @@ body {
 .principle-text h4,
 .section-content li h4,
 .section-content li h5 {
+  margin-top: 1rem;
   margin-bottom: 0.5rem;
 }
 
