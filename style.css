@@ -12,6 +12,12 @@ body {
   width: 100%;
 }
 
+.principle-text h4,
+.section-content li h4,
+.section-content li h5 {
+  margin-bottom: 0.5rem;
+}
+
 section.text-block {
   width: 90%;
   margin-left: auto;
@@ -41,6 +47,10 @@ section .section-subheading {
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   font-weight: 800;
+}
+
+#header-nav {
+  display: none;
 }
 
 /* Footer Style */
@@ -75,6 +85,9 @@ section .section-subheading {
 
 /* Style the hero section */
 #hero {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  height: 350px;
   background: linear-gradient(
       -45deg,
       var(--gradient-purple),
@@ -83,10 +96,11 @@ section .section-subheading {
     url("./images/design-bg.jpg") center center / cover no-repeat;
   background-size: cover;
   background-position: center;
-  color: #fff;
+  color: var(--white);
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 /* Design section style */
@@ -95,25 +109,56 @@ section .section-subheading {
 }
 
 /* Color section style */
+#color-generator > p {
+  margin-top:  1rem;
+}
+
 #good-contrast {
   background-color: var(--deep-blue);
   color: var(--white);
+  height: 100px;
+  margin-top: 1rem;
 }
 
 #bad-contrast {
   background-color: var(--gradient-pink);
   color: var(--black);
+  height: 100px;
+  margin-top: 1rem;
+}
+
+#color-generator {
+  margin-top: 1.5rem;
+}
+#color-palette {
+  margin-top: 1rem;
 }
 
 .color-box {
-  width: 50px;
+  width: 100%;
   height: 50px;
 }
 
 .color-code {
-  font-weight: 600;
+  font-weight: 400;
   background-color: var(--white);
   padding-left: 0.2rem;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#generate-palette {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--deep-blue);
+  color: var(--white);
+  border: none;
+}
+
+/* TYpography style */
+#typography-playground {
+  margin-top: 1.5rem;
 }
 
 /* Team Section Style */
@@ -127,6 +172,12 @@ section .section-subheading {
   border-radius: 50%;
   width: 200px;
   height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team-member {
+  margin-top: 1.5rem;
 }
 
 .team-member-name,
@@ -163,7 +214,10 @@ section .section-subheading {
 
   /* Hero section styles */
   #hero {
+    padding-left: 0;
+    padding-right: 0;
     height: 500px;
+    text-align: left;
   }
 
   #hero-content h1 {
@@ -178,11 +232,6 @@ section .section-subheading {
   #team-section .section-content {
     flex-direction: row;
     padding: 2rem;
-  }
-
-  /* Design section style */
-  .design-principle:not(:first-child) {
-    margin-top: 2rem;
   }
 
   /* Color section style */
@@ -206,7 +255,6 @@ section .section-subheading {
 
   #color-palette {
     display: flex;
-    justify-content: space-between;
   }
 
   .color-box {
@@ -239,6 +287,11 @@ section .section-subheading {
 
   .layout-spacing-content li {
     margin-top: 1rem;
+  }
+
+  /* Team section style */
+  .team-member .team-member-photo {
+    width: 200px;
   }
 
   /* Content Styles - Helpers */
