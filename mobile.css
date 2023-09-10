@@ -8,6 +8,14 @@ body {
 }
 
 /* Helper Style Classes */
+input[type=text], select {
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
 .block {
   width: 100%;
 }
@@ -130,6 +138,20 @@ section .section-subheading {
 /* TYpography style */
 #typography-playground {
   margin-top: 1.5rem;
+}
+
+#typography-playground h3 {
+  margin-bottom: 1rem;
+}
+
+.text-input {
+  margin-bottom: 1rem;
+}
+
+#live-text-output,
+.slider,
+.font-family-dropdown {
+  margin-top: 0.5rem;
 }
 
 /* Layout section style */
