@@ -183,4 +183,5 @@ section .section-subheading {
 .team-member-name,
 .about-member {
   text-align: center;
+  margin-top: 0.2rem;
 }
