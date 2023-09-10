@@ -168,6 +168,10 @@ section .section-subheading {
     margin-top: 1.5rem;
 }
 
+.layout-images figure {
+  margin-top: 1rem;
+}
+
 /* Team Section Style */
 #team-section .section-content {
   display: flex;
