@@ -12,6 +12,10 @@
     display: block;
 }
 
+#large-header-nav {
+    display: block;
+}
+
 .nav-list {
     display: flex;
     justify-content: space-between;
@@ -19,8 +23,15 @@
 }
 .nav-list .nav-item {
     display: block;
-    color: var(--gradient-purple);
     font-weight: 600;
+}
+
+#large-header-nav .nav-item:not(:first-child) {
+    margin-top:0;
+}
+
+#large-header-nav .nav-item a {
+    color: var(--gradient-purple);
 }
 
 .header .nav-item a:hover {

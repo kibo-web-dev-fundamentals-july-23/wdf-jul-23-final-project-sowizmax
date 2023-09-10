@@ -75,8 +75,12 @@ section .section-subheading {
   color: var(--pink);
 }
 
-.nav-item a {
+.nav-item a{
   color: var(--white);
+}
+
+#large-header-nav {
+  display: none;
 }
 
 .ham-icon-wrapper {
