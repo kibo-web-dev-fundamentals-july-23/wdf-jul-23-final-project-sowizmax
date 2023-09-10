@@ -172,9 +172,6 @@ section .section-subheading {
 
 /* Footer Styles */
 .footer-content {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
     padding: 2rem 0;
     flex-direction: row;
     justify-content: space-between;
